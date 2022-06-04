@@ -1,5 +1,5 @@
 {
-  "name": "mobile",
+  "name": "module06",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,14 +10,19 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-navigation/native": "^6.0.10",
-    "@react-navigation/native-stack": "^6.6.2",
-    "axios": "^0.27.2",
+    "@react-native-async-storage/async-storage": "react-native-community/async-storage",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
+    "axios": "^0.25.0",
+    "prop-types": "15.6.1",
     "react": "17.0.2",
     "react-native": "0.68.2",
-    "react-native-safe-area-context": "^4.2.5",
-    "react-native-screens": "^3.13.1",
-    "reactotron-react-native": "3.6.4"
+    "react-native-gesture-handler": "2.1.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.2",
+    "react-native-vector-icons": "^9.0.0",
+    "reactotron-react-native": "3.6.4",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -25,11 +30,19 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^26.6.3",
-    "metro-react-native-babel-preset": "^0.67.0",
+    "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ]
   }
 }
