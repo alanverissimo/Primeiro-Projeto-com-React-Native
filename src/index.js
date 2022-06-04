@@ -1,34 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, StatusBar } from 'react-native';
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import './config/ReactotronConfig';
-
-
-const styles = StyleSheet.create ({
-    container: {
-        flex: 1,
-        backgroundColor: '#7159c1',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    
-    title: {
-        color: '#FFF',
-        fontSize: 32,
-        fontWeight: 'bold'
-    },
-});
-
-console.tron.log('Hello World');
-
-export default function App() {
-    return (
-     <>
-     <StatusBar barStyle="light-content" backgroundColor="#7159c1" translucent />
-     
- <View style={styles.container}>
-     <Text style={styles.title}>Hello GoStack!</Text>
- </View>
- </>
- );
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen</Text>
+    </View>
+  );
 }
+
+const Stack = createNativeStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
