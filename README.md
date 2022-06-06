@@ -27,10 +27,6 @@ Ex.: rodrigoleitesouza
 
 Uma vez que se trata de um aplicativo mobile é necessário a utilização de um emulador para a compilação.
 
-### `Demonstração`
-
-![GIF](https://i.imgur.com/2XZ2LbM.gif)
-
 ------------------------------------------------------------------
 
 Qualquer dúvida entre em contato por <a href="mailto:alanverissimodev@gmail.com?">alanverissimodev@gmail.com</a>
