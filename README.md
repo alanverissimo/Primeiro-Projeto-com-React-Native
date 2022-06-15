@@ -15,7 +15,7 @@ App mobile para armazenar e organizar usuários do GitHub e seus repositórios p
 
 ### `Como iniciar?`
 
-Defina em seu terminal o diretório "*Project*" e digite "*yarn start, e em seguida yarn android*".
+Defina em seu terminal o diretório "*mobile*" e digite "*yarn start, e em seguida yarn android*".
 
 ### `Como usar?`
 
