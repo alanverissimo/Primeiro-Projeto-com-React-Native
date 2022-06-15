@@ -32,6 +32,7 @@ export default class Main extends Component {
     loading: false,
   };
 
+ 
   async componentDidMount() {
     const users = await AsyncStorage.getItem("users");
 
@@ -72,6 +73,7 @@ export default class Main extends Component {
   };
 
 
+
   handleNavigate = (user) => {
     const { navigation } = this.props;
 
@@ -86,6 +88,8 @@ export default class Main extends Component {
     return (
       <Container>
         <Form>
+
+
           <Input
             autoCorrect={false}
             autoCapitalize="none"
@@ -108,6 +112,8 @@ export default class Main extends Component {
               <Avatar source={{ uri: item.avatar }} />
               <Name>{item.name}</Name>
               <Bio>{item.bio}</Bio>
+
+
 
               <ProfileButton onPress={() => this.handleNavigate(item)}>
                 <ProfileButtonText>Ver perfil</ProfileButtonText>
